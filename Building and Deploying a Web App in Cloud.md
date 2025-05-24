@@ -1,6 +1,6 @@
 # Build and Deply a Web App in Cloud
 
-# Introducing today's project
+# Introducing the project
 
 Iam going to build a CI/CD pipeline and deploy a web app that was developed from Scratch and deploy it on a EC2 instance.This project is part one of a series of DevOps projects where I'm building a CI/CD pipeline! I'll be working on the next project in the upcoming days where I will connecting my Github repo to AWS.
 
@@ -10,7 +10,12 @@ Services I used were AWS EC2, Apache Maven, SSH, Vs code. Key concepts I learnt 
 # Project Reflection
 This project took me approximately two and half an hour to complete. The most challenging part was the ssh and maven coding part. It was most rewarding to see my web app files in the EC2 instance via VS code and being able to edit it.
 
+## Setup the IAM user account
+
 ## Launching an EC2 Instance
+
+Before launching the EC2 instance it is also important to choose the Region to avail the services properly.
+
 ### *1. Create a name for the web server* ###
 
 <img width="688" alt="Screenshot 2025-05-23 at 5 52 24 PM" src="https://github.com/user-attachments/assets/d7b5fe9f-abec-4ff6-bf9f-4365d51e8129" />
@@ -39,5 +44,9 @@ When you use the private key, it verifies that you're the one allowed to access 
 
 Pem stands for Privacy Enhanced Mail that we need to connect to our EC2 instance in the cloud. Don't lose this pem file since you can't recover this file meaning once it is lost you have to create another new key pair and then repeat the process again.
 
+## That is it, now we can launch the EC2 instance
 
+
+
+            
 
