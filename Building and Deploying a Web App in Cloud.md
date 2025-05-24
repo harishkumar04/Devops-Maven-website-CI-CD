@@ -107,8 +107,16 @@ sudo dnf install -y java-1.8.0-amazon-corretto-devel
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64
 export PATH=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64/jre/bin/:$PATH
 ```
+Output:
+
+<img width="499" alt="Screenshot 2025-05-24 at 10 41 35 PM" src="https://github.com/user-attachments/assets/2b8cbc07-043c-4ac9-b881-2115093363a3" />
+
+Using VS Code's file explorer, I could see all the files that have been created inside the EC2 instance including those files that I have created using Apache Maven.
+
+Two of the project folders created by Maven are src and webapp, which have different functionality. The "src" folders has all the source codes that define the web app and the "webapp" folder is a sub folder of the src which has the web files like CSS.
 
 
+<img width="152" alt="Screenshot 2025-05-24 at 10 43 09 PM" src="https://github.com/user-attachments/assets/a90b854a-378c-401c-9b9e-b998de9a6493" />
 
             
 
