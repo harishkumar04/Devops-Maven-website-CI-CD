@@ -12,6 +12,8 @@ This project took me approximately two and half an hour to complete. The most ch
 
 ## Setup the IAM user account
 
+An IAM (Identity and Access Management) account in AWS is a user identity created within your AWS account to manage access securely without using the root user. Unlike the **root user**, which has unrestricted access to all AWS resources, IAM users have only the permissions explicitly granted to them. It's a best practice to use IAM accounts for daily operations and reserve the root account for critical administrative tasks.
+
 ## Launching an EC2 Instance
 
 Before launching the EC2 instance it is also important to choose the Region to avail the services properly.
@@ -45,6 +47,8 @@ When you use the private key, it verifies that you're the one allowed to access 
 Pem stands for Privacy Enhanced Mail that we need to connect to our EC2 instance in the cloud. Don't lose this pem file since you can't recover this file meaning once it is lost you have to create another new key pair and then repeat the process again.
 
 ## That is it, now we can launch the EC2 instance
+
+## 
 
 
 
