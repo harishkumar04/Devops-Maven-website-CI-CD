@@ -54,7 +54,7 @@ Pem stands for Privacy Enhanced Mail that we need to connect to our EC2 instance
 
 Now, we will connect to our EC2 instance inside which we will create a web app. A Terminal is place which we can use to send commands to the computer. The first command I ran for this project is cd Desktop/Devops to navigate to the Devops folder that I created. I also updated my Private key's permissions by using the command 'chmod'. 
 
-```git
+```bash
 chmod 400 [filename.pem]
 ```
 Here, chmod stands for 'Change Mode' and it sets the file as readable to owner and no permissions for group and others
@@ -72,7 +72,7 @@ Before, connecting to the EC2 instance we need the Public Ip address of the EC2 
 
 Now, to connect to the EC2 instance use this command 
 
-```git
+```bash
 ssh -i [Path name to the private key] ec2-user@[Public DNS server address]
 ```
 
@@ -98,6 +98,14 @@ wget https://archive.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3
 sudo tar -xzf apache-maven-3.5.2-bin.tar.gz -C /opt
 echo "export PATH=/opt/apache-maven-3.5.2/bin:$PATH" >> ~/.bashrc
 source ~/.bashrc
+```
+Now we're going to install Java 8, or more specifically, Amazon Correto 8.
+Run these commands:
+
+```bash
+sudo dnf install -y java-1.8.0-amazon-corretto-devel
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64
+export PATH=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64/jre/bin/:$PATH
 ```
 
 
