@@ -1,5 +1,3 @@
-# Build and Deply a Web App in Cloud
-
 # Introducing the project
 
 Iam going to build a CI/CD pipeline and deploy a web app that was developed from Scratch and deploy it on a EC2 instance.This project is part one of a series of DevOps projects where I'm building a CI/CD pipeline! I'll be working on the next project in the upcoming days where I will connecting my Github repo to AWS.
