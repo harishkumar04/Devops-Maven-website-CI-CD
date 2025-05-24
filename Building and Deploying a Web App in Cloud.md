@@ -10,6 +10,8 @@ Services I used were AWS EC2, Apache Maven, SSH, Vs code. Key concepts I learnt 
 # Project Reflection
 This project took me approximately two and half an hour to complete. The most challenging part was the ssh and maven coding part. It was most rewarding to see my web app files in the EC2 instance via VS code and being able to edit it.
 
+# Project steps
+
 ## Setup the IAM user account
 
 An IAM (Identity and Access Management) account in AWS is a user identity created within your AWS account to manage access securely without using the root user. Unlike the **root user**, which has unrestricted access to all AWS resources, IAM users have only the permissions explicitly granted to them. It's a best practice to use IAM accounts for daily operations and reserve the root account for critical administrative tasks.
