@@ -1,6 +1,6 @@
 # Introducing the project
 
-I am building a CI/CD pipeline and deploy a web app that was developed from Scratch and deploy it on a EC2 instance.This project is part one of a series of DevOps projects where I'm building a CI/CD pipeline! I'll be working on the next project in the upcoming days where I will connecting my Github repo to AWS.
+I am building a CI/CD pipeline to deploy a web application developed from scratch on an EC2 instance. This project is the first in a series of DevOps projects focused on CI/CD implementation using AWS. In the upcoming days, I’ll be working on the next phase, which involves connecting my GitHub repository to AWS.
 
 # Key tools and concepts
 Services used were AWS EC2, Apache Maven, SSH, Vs code. Key concepts that I learnt include how to create and launch an EC2 instance, how to create a web app using Maven and finally how to connect my VS code to the EC2 instance using Remote SSH extension.
