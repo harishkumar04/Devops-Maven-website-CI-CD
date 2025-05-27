@@ -116,5 +116,48 @@ Two of the project folders created by Maven are src and webapp, which have diffe
 
 <img width="152" alt="Screenshot 2025-05-24 at 10 43 09 PM" src="https://github.com/user-attachments/assets/a90b854a-378c-401c-9b9e-b998de9a6493" />
 
+# Opening VS code inside the EC2 Instance
+
+This is possible using the Remote-SSH extension in the VS code.
+
+After installing the extension, click on the extension which you can see at the left side bottom of the Vs code. After clicking we can this window:
+
+<img width="593" alt="Screenshot 2025-05-27 at 7 56 59 PM" src="https://github.com/user-attachments/assets/e6acd39a-d341-47b6-aaed-ccb32f5263bc" />
+
+Click on "Connect to Host". Then,
+
+<img width="587" alt="Screenshot 2025-05-27 at 7 58 48 PM" src="https://github.com/user-attachments/assets/2424e68b-64f8-4026-bb28-0980c9a03ab8" />
+
+Click on "Add New SSH host" to add the ec2 instance to the "Config file"
+
+<img width="600" alt="Screenshot 2025-05-27 at 7 59 09 PM" src="https://github.com/user-attachments/assets/be62c369-8e22-4292-9c18-320665d049c8" />
+
+To connect we need to enter the same command that we entered to connect the ec2 instance to our terminal.
+
+```bash
+ssh -i [Path name to the private key] ec2-user@[Public DNS server address]
+```
+Now, there will be a new window that will be opened inside the ec2 instance where we can see the web app and it's folders.
+
+# Editing the web app 
+
+This is just a template of an web app but we can also build and deploy any app in this EC2 instance.
+
+<img width="495" alt="Screenshot 2025-05-27 at 7 50 56 PM" src="https://github.com/user-attachments/assets/937d2dd6-8abe-46b4-818b-d4e3593d7f65" />
+
+Index.jsp is similar to HTML but it can also have Java code which can be used to show
+dynamic web content instead of a static one. I edited index.jsp by updating the HTML code using the VS code IDE in my EC2
+instance.
+
+# Using Terminal to edit the web app
+
+Navigate to the project folder using the terminal and then type this command:
+
+```bash
+nano index.jsp
+```
+Where we can edit the file and save it.
+
+
             
 
