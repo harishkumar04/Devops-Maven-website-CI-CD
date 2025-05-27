@@ -1,12 +1,12 @@
 # Introducing the project
 
-Iam going to build a CI/CD pipeline and deploy a web app that was developed from Scratch and deploy it on a EC2 instance.This project is part one of a series of DevOps projects where I'm building a CI/CD pipeline! I'll be working on the next project in the upcoming days where I will connecting my Github repo to AWS.
+I am building a CI/CD pipeline and deploy a web app that was developed from Scratch and deploy it on a EC2 instance.This project is part one of a series of DevOps projects where I'm building a CI/CD pipeline! I'll be working on the next project in the upcoming days where I will connecting my Github repo to AWS.
 
 # Key tools and concepts
-Services I used were AWS EC2, Apache Maven, SSH, Vs code. Key concepts I learnt include how to create and launch an EC2 instance, how to create a web app using Maven and finally how to connect my VS code to the EC2 instance using Remote SSH extension.
+Services used were AWS EC2, Apache Maven, SSH, Vs code. Key concepts that I learnt include how to create and launch an EC2 instance, how to create a web app using Maven and finally how to connect my VS code to the EC2 instance using Remote SSH extension.
 
 # Project Reflection
-This project took me approximately two and half an hour to complete. The most challenging part was the ssh and maven coding part. It was most rewarding to see my web app files in the EC2 instance via VS code and being able to edit it.
+The most challenging part was the ssh and maven coding part. It was most rewarding to see my web app files in the EC2 instance via VS code and being able to edit it.
 
 # Project steps
 
@@ -16,7 +16,7 @@ An IAM (Identity and Access Management) account in AWS is a user identity create
 
 ## Launching an EC2 Instance
 
-Before launching the EC2 instance it is also important to choose the Region to avail the services properly.
+Before launching the EC2 instance, it is also important to choose the Region to avail the services properly.
 
 ### *1. Create a name for the web server* ###
 
@@ -24,7 +24,7 @@ Before launching the EC2 instance it is also important to choose the Region to a
 
 ### *2. Choose the AMI (Amazon Machine Image) and the Instance Type* ###
 
-- Here, Iam choosing "Amazon Linux 2023 AMI" since it is eligible for the free tier that means we don't have to pay anything to run this instance.
+- Here, I am choosing "Amazon Linux 2023 AMI" since it is eligible for the free tier that means we don't have to pay anything to run this instance.
   
 - The Instance type is "t2.micro" again since it is elgible for the free tier
 
@@ -40,13 +40,13 @@ Key pair is used to connect to your instance on the cloud. A key pair in EC2 is 
 
 It's made of two halves: a public key that AWS keeps, and a private key that you download.
 
-When you use the private key, it verifies that you're the one allowed to access that specific virtual machine, keeping everything secure and just for you. It uses RSA to generate the key pair or u can choose among the other algorithms that are avaliable to generate your key pair.
+When you use the private key, it verifies that if you're the one allowed to access that specific virtual machine, keeping everything secure and just for you. It uses RSA to generate the key pair or you can choose among the other algorithms that are available to generate your key pair.
 
 #### *3.1 Download the key as a Pem File* ####
 
-Pem stands for Privacy Enhanced Mail that we need to connect to our EC2 instance in the cloud. Don't lose this pem file since you can't recover this file meaning once it is lost you have to create another new key pair and then repeat the process again.
+PEM stands for Privacy Enhanced Mail that we need to connect to our EC2 instance in the cloud. Don't lose this pem file since you can't recover this file, as in once it is lost, you have to create another new key pair and then repeat the process again.
 
-## That is it, now we can launch the EC2 instance
+## Launching EC2 instance
 
 ## Connect to the EC2 instance using the Terminal
 
@@ -59,16 +59,15 @@ Here, chmod stands for 'Change Mode' and it sets the file as readable to owner a
 
 ### *1. Use SSH to connect to the terminal to the EC2 instance* ###
 
-SSH stands for Secure Shell is a protocol used to make sure only authorized users can access a remote server. When you connect to your EC2 instance later in this project, SSH verifies you have the correct private key that matches the public key on the server.
-
+SSH stands for Secure Shell, is a protocol used to make sure that only authorized users can access a remote server. When you connect to your EC2 instance later in this project, SSH verifies whether you have the correct private key that matches the public key on the server.
 
 SSH is also a type of network traffic. Once SSH has authorized you, it'll set up a secure connection between you and the EC2 instance. All data transferred (including your commands and the responses from the instance) gets encrypted. This encryption makes SSH an ideal method for working with virtual servers.
 
-Before, connecting to the EC2 instance we need the Public Ip address of the EC2 instance otherwise the system don't know where is our EC2 instance and which one to connect to. So, copy that address which will avaliable once you click on the details of the instance.
+Before, connecting to the EC2 instance we need the Public IP address of the EC2 instance, otherwise the system won't know where our EC2 instance is and which one to connect to. Copy the address that appears when you click on the instance details.
 
 <img width="265" alt="Screenshot 2025-05-23 at 9 43 26 PM" src="https://github.com/user-attachments/assets/9e9224f1-7513-48b9-b882-edbef0c6c617" />
 
-Now, to connect to the EC2 instance use this command 
+Now, to connect to the EC2 instance, use this command:
 
 ```bash
 ssh -i [Path name to the private key] ec2-user@[Public DNS server address]
@@ -82,14 +81,13 @@ We can see the change in the name of the root user in the terminal
 
 ## *Creating the Web app*
 
-*Apache Maven*  is a tool that helps developers build and organize Java software projects. It's also a package manager, which means it automatically download any external pieces of code your project depends on to work.
+*Apache Maven* is a tool that helps developers build and organize Java software projects. It's also a package manager, which means it will automatically download any external pieces of the code that your project depends on to work.
 
-It uses something called archetypes, which are like templates, to lay out the foundations for different types of projects e.g. web apps.
+It uses archetypes, which are like templates, that are used to lay out the foundations for different types of projects, such as web apps.
 
-Java is required in this project because we are using Apache Maven which needs
-Java to write the code for our web app.
+Java is required for this project because we are using Apache Maven, which relies on Java to develop and build our web application.
 
-Now, we have to install Maven in the EC2 instance which can be done using this commands below
+Now, we have to install Maven in the EC2 instance which can be done using the commands below :
 
 ```bash
 wget https://archive.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz
@@ -98,7 +96,7 @@ echo "export PATH=/opt/apache-maven-3.5.2/bin:$PATH" >> ~/.bashrc
 source ~/.bashrc
 ```
 Now we're going to install Java 8, or more specifically, Amazon Correto 8.
-Run these commands:
+Run these commands shown below :
 
 ```bash
 sudo dnf install -y java-1.8.0-amazon-corretto-devel
@@ -111,16 +109,15 @@ Output:
 
 Using VS Code's file explorer, I could see all the files that have been created inside the EC2 instance including those files that I have created using Apache Maven.
 
-Two of the project folders created by Maven are src and webapp, which have different functionality. The "src" folders has all the source codes that define the web app and the "webapp" folder is a sub folder of the src which has the web files like CSS.
-
+Two of the project folders created by Maven are src and webapp, which have different functionalities. The "src" folders has all the source codes that define the web app and the "webapp" folder is a sub folder of the src which has the web files like CSS.
 
 <img width="152" alt="Screenshot 2025-05-24 at 10 43 09 PM" src="https://github.com/user-attachments/assets/a90b854a-378c-401c-9b9e-b998de9a6493" />
 
 # Opening VS code inside the EC2 Instance
 
-This is possible using the Remote-SSH extension in the VS code.
+Opening VS code inside the EC2 Instance can be made possible by using the Remote-SSH extension in the VS code.
 
-After installing the extension, click on the extension which you can see at the left side bottom of the Vs code. After clicking we can this window:
+After installing the extension, click on the extension which you can see at the left side bottom of the Vs code. After clicking we can view this window:
 
 <img width="593" alt="Screenshot 2025-05-27 at 7 56 59 PM" src="https://github.com/user-attachments/assets/e6acd39a-d341-47b6-aaed-ccb32f5263bc" />
 
@@ -128,11 +125,11 @@ Click on "Connect to Host". Then,
 
 <img width="587" alt="Screenshot 2025-05-27 at 7 58 48 PM" src="https://github.com/user-attachments/assets/2424e68b-64f8-4026-bb28-0980c9a03ab8" />
 
-Click on "Add New SSH host" to add the ec2 instance to the "Config file"
+Click on "Add New SSH host" to add the EC2 instance to the "Config file"
 
 <img width="600" alt="Screenshot 2025-05-27 at 7 59 09 PM" src="https://github.com/user-attachments/assets/be62c369-8e22-4292-9c18-320665d049c8" />
 
-To connect we need to enter the same command that we entered to connect the ec2 instance to our terminal.
+To connect we need to enter the same command that we entered to connect the EC2 instance to our terminal.
 
 ```bash
 ssh -i [Path name to the private key] ec2-user@[Public DNS server address]
@@ -141,13 +138,11 @@ Now, there will be a new window that will be opened inside the ec2 instance wher
 
 # Editing the web app 
 
-This is just a template of an web app but we can also build and deploy any app in this EC2 instance.
+This is just a template of a web app, but we can also build and deploy any functional application on this EC2 instance.
 
 <img width="495" alt="Screenshot 2025-05-27 at 7 50 56 PM" src="https://github.com/user-attachments/assets/937d2dd6-8abe-46b4-818b-d4e3593d7f65" />
 
-Index.jsp is similar to HTML but it can also have Java code which can be used to show
-dynamic web content instead of a static one. I edited index.jsp by updating the HTML code using the VS code IDE in my EC2
-instance.
+Index.jsp is similar to HTML but it can also have Java code which can be used to show dynamic web content instead of a static one. Edited the index.jsp file by updating the HTML code using the VS Code IDE on my EC2 instance.
 
 # Using Terminal to edit the web app
 
@@ -156,8 +151,4 @@ Navigate to the project folder using the terminal and then type this command:
 ```bash
 nano index.jsp
 ```
-Where we can edit the file and save it.
-
-
-            
-
+where we can edit the file and save it.
