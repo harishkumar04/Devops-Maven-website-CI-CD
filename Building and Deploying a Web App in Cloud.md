@@ -103,6 +103,17 @@ sudo dnf install -y java-1.8.0-amazon-corretto-devel
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64
 export PATH=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64/jre/bin/:$PATH
 ```
+
+Run Maven commands in your terminal to generate a Java web app.
+Use mvn to generate a Java web app:
+
+```bash
+mvn archetype:generate \
+   -DgroupId=com.javaweb.app \
+   -DartifactId=javaweb \
+   -DarchetypeArtifactId=maven-archetype-webapp \
+   -DinteractiveMode=false
+```
 Output:
 
 <img width="499" alt="Screenshot 2025-05-24 at 10 41 35 PM" src="https://github.com/user-attachments/assets/2b8cbc07-043c-4ac9-b881-2115093363a3" />
