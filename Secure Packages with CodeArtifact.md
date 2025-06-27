@@ -1,6 +1,6 @@
 # 🔧 Using AWS CodeArtifact to Store and Manage Dependencies 
 
-This guide explains how to configure **AWS CodeArtifact** as your Maven package repository, set up the necessary IAM permissions, and compile your project to publish artifacts into the repository.
+In this project I am going to configure **AWS CodeArtifact** as my Maven package repository, set up the necessary IAM permissions, and compile my project to publish artifacts into the repository.
 
 <img width="708" alt="Screenshot 2025-06-27 at 11 45 07 AM" src="https://github.com/user-attachments/assets/5ed52b90-cf15-49b3-b63a-583195cf0b8c" />
 
