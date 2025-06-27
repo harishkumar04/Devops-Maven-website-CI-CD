@@ -1,5 +1,9 @@
 # 🚀 Packaging an app using AWS CodeBuild & S3
 
+In this project, I will set up CodeBuild 
+
+<img width="707" alt="Screenshot 2025-06-27 at 11 12 21 PM" src="https://github.com/user-attachments/assets/20cc95ec-3f0a-4f77-aa7a-9b7a269f2a5b" />
+
 
 ## 📁 Prerequisites
 
