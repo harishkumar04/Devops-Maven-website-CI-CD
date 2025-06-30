@@ -15,8 +15,8 @@ This guide walks through deploying an EC2 instance with AWS CloudFormation and C
 3. Choose **Compute Platform** as **EC2/On-premises**.
 4. Provide an Application Name and click **Create application**.
 
-📸 *Example:*
-![Create Application](./screenshots/Screenshot%202025-06-24%20at%2010.03.43%20PM.png)
+
+<img width="598" alt="Screenshot 2025-06-30 at 11 46 50 PM" src="https://github.com/user-attachments/assets/d4a14cfb-e6a8-4840-af2e-e9d93e850078" />
 
 ---
 
@@ -256,8 +256,9 @@ When creating the stack, if you encounter a failure:
 * Choose **"Delete all newly created resources"** under stack failure options.
 * This ensures that any partially created resources are cleaned up automatically.
 
-📸 *Example:*
-![Stack Creation](./screenshots/Screenshot%202025-06-24%20at%2010.16.15%20PM.png)
+### Stack Creation Successful
+
+<img width="603" alt="Screenshot 2025-06-30 at 11 47 28 PM" src="https://github.com/user-attachments/assets/1231ebb5-01fe-44d5-aa23-b3c38bed286e" />
 
 ---
 
@@ -272,8 +273,8 @@ Before creating a Deployment Group, you need a **Service Role**.
 3. Attach the default AWS managed policy (e.g., `AWSCodeDeployRole`).
 4. Name your role (e.g., `CodeDeployServiceRole`) and create it.
 
-📸 *Example:*
-![Service Role](./screenshots/Screenshot%202025-06-24%20at%2010.17.46%20PM.png)
+
+
 
 ---
 
