@@ -4,7 +4,9 @@ Here’s a polished version of your AWS CodeDeploy setup process in a GitHub-fri
 
 # 🚀 AWS CodeDeploy Setup Guide
 
-This guide walks through deploying an EC2 instance with AWS CloudFormation and CodeDeploy.
+Deploying an EC2 instance with AWS CloudFormation and CodeDeploy and then viewing the Live Website in the browser.
+
+<img width="732" alt="Screenshot 2025-06-30 at 11 52 37 PM" src="https://github.com/user-attachments/assets/88373e01-b162-4ba7-b681-d5e233f86689" />
 
 ---
 
