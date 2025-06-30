@@ -273,9 +273,6 @@ Before creating a Deployment Group, you need a **Service Role**.
 3. Attach the default AWS managed policy (e.g., `AWSCodeDeployRole`).
 4. Name your role (e.g., `CodeDeployServiceRole`) and create it.
 
-
-
-
 ---
 
 ### 🚀 Create Deployment Group
@@ -286,8 +283,6 @@ Before creating a Deployment Group, you need a **Service Role**.
 4. **Do not** enable Load Balancing for now.
 5. Click **Create Deployment Group**.
 
-📸 *Example:*
-![Deployment Group](./screenshots/Screenshot%202025-06-24%20at%2010.20.55%20PM.png)
 
 ---
 
@@ -299,11 +294,16 @@ Before creating a Deployment Group, you need a **Service Role**.
 4. Choose `.zip` as the revision file type.
 5. Click **Create Deployment**.
 
-📸 *Example:*
-![Create Deployment](./screenshots/Screenshot%202025-06-24%20at%2010.26.06%20PM.png)
-
 ---
 
 ## ✅ Deployment Complete!
 
 Your application should now be deployed to your EC2 instance. You can access it using the **Public IP** provided in the CloudFormation Outputs section.
+
+## View the Website
+
+- Copy and paste the Public IP address into the browser.
+- *Make sure it is "HTTP" not "HTTPS"
+
+<img width="1185" alt="Screenshot 2025-06-24 at 11 42 26 PM" src="https://github.com/user-attachments/assets/5c26eeb0-2830-4f93-9eb1-6d5c5ad4be13" />
+
