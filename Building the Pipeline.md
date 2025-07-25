@@ -19,6 +19,8 @@ This means whenever I push code to GitHub, the pipeline is triggered automatical
 
 <img width="591" height="527" alt="Screenshot 2025-07-25 at 10 56 42 AM" src="https://github.com/user-attachments/assets/fc5a18d6-1251-4176-afa2-22097c6d5393" />
 
+Now, when it comes to Deloy Stage make sure to choose the Deployment group correctly. And, make sure the **Automatic Rollback on Stage failure** on.
+
 <img width="590" height="529" alt="Screenshot 2025-07-25 at 10 58 22 AM" src="https://github.com/user-attachments/assets/e4453445-1d3f-4157-affb-42fd99c035f9" />
 
 ---
