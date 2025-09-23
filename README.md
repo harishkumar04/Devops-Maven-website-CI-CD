@@ -1,4 +1,3 @@
-This is my Devops Project where I will be building a CI/CD Pipeline using AWS
 # Devops Pipeline Projects
 
 Welcome to **Devops Pipeline Projects**! 🚀
