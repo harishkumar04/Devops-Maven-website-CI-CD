@@ -1,7 +1,3 @@
-Here’s a polished version of your AWS CodeDeploy setup process in a GitHub-friendly **Markdown documentation** format. This can be used as a `README.md` or wiki documentation for your repository.
-
----
-
 # 🚀 AWS CodeDeploy Setup Guide
 
 Deploying an EC2 instance with AWS CloudFormation and CodeDeploy and then viewing the Live Website in the browser.
